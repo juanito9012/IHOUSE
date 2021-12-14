@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="turquesa">#0dc8f2</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="turquesa_oscuro">#165665</color>
+    <color name="red">#ff0000</color>
+    <color name="verde_lima">#31E683</color>
+</resources>

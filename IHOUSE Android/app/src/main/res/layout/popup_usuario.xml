@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="500dp"
+    android:screenOrientation="portrait">
+
+    <EditText
+        android:id="@+id/nombreMiembro"
+        android:layout_width="268dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bg_white_stroke_black"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:hint="@string/usuario"
+        android:lineSpacingExtra="14sp"
+        android:rotation="0"
+        android:rotationY="0"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/emailUsuarioMiembros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exitPopupUsuario" />
+
+    <EditText
+        android:id="@+id/emailUsuarioMiembros"
+        android:layout_width="268dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bg_white_stroke_black"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:hint="@string/email"
+        android:inputType="text|textEmailAddress"
+        android:lineSpacingExtra="14sp"
+        android:rotation="0"
+        android:rotationY="0"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/psswdUsuarioMiembros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/psswdUsuarioMiembros"
+        android:layout_width="268dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bg_white_stroke_black"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:hint="@string/contrase_a"
+        android:inputType="text|textPassword"
+        android:lineSpacingExtra="14sp"
+        android:rotation="0"
+        android:rotationY="0"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerTipoUsuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/botonActualizarMiembro"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/button_blue"
+        android:text="@string/actualizar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:textColorHint="@color/black"
+        app:backgroundTint="#2656EF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/botonAddMiembro"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/button_blue"
+        android:text="@string/crear"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:textColorHint="@color/black"
+        app:backgroundTint="#2656EF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
+
+    <ImageView
+        android:id="@+id/exitPopupUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_exit" />
+
+    <Spinner
+        android:id="@+id/spinnerTipoUsuario"
+        android:layout_width="283dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="144dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageEliminarUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#FD0000" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

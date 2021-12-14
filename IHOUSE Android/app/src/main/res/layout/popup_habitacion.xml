@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:screenOrientation="portrait"
+    android:layout_height="400dp">
+
+    <EditText
+        android:id="@+id/nombreHabitacion"
+        android:layout_width="268dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="39dp"
+        android:background="@drawable/bg_white_stroke_black"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:hint="@string/nombre_habitacion"
+        android:lineSpacingExtra="14sp"
+        android:rotation="0"
+        android:rotationY="0"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/lugarHabitacionPopup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/lugarHabitacionPopup"
+        android:layout_width="268dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/bg_white_stroke_black"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:hint="@string/lugar_habitacion"
+        android:lineSpacingExtra="14sp"
+        android:rotation="0"
+        android:rotationY="0"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/botonAddHabitacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/botonAddHabitacion"
+        android:layout_width="301dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/button_blue"
+        android:text="@string/crear"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:textColorHint="@color/black"
+        app:backgroundTint="#2656EF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/botonActualizarHabitacion"
+        android:layout_width="301dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/button_blue"
+        android:text="@string/actualizar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:textColorHint="@color/black"
+        app:backgroundTint="#2656EF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="24dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginLeft="208dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/nombreHabitacion"
+        app:layout_constraintEnd_toEndOf="@+id/nombreHabitacion"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toStartOf="@+id/nombreHabitacion"
+        app:layout_constraintTop_toTopOf="@+id/nombreHabitacion"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/cama" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="23dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginLeft="208dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lugarHabitacionPopup"
+        app:layout_constraintEnd_toEndOf="@+id/lugarHabitacionPopup"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/lugarHabitacionPopup"
+        app:layout_constraintTop_toTopOf="@+id/lugarHabitacionPopup"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/lugar" />
+
+    <ImageView
+        android:id="@+id/exitPopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/nombreHabitacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_exit" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

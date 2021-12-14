@@ -1,0 +1,30 @@
+Pantalla de carga  OK!
+Mirar lo que es el view model OK!
+Hacer los items OK!
+Borrar añadir y actualizar cosas OK!
+Pantalla popup para actulizar etc... OK!
+
+Reparar el actualizar habitaciones OK!
+Saber los pines en uso OK!
+
+Tareas programadas OK!
+PopupELiminarUsuario OK!
+
+
+SERVER
+PETICIONES DE LOS USUARIOS OK!
+QUITAR LAS CASAS OK!
+verificar siempre hay usuario
+COMPROBAR PINES GPIO
+REVISAR
+
+ANDROID
+QUITAR LAS CASAS OK!
+linea 225 Habitaciones fragment OK!
+Manejar pantalla miembro al borrar y actualizar OK!
+PONER BIEN LOS VIEW MODEL OK!
+PONER TO-DO CON BINDING OK!
+Revisar los campos vacios OK!
+QUITAR STRINGS XML OK!
+MIRAR MODO OSCURO (FACIL)
+COMPROBAR PINES GPIO OK!
